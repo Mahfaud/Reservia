@@ -41,6 +41,7 @@ nav {
     text-align: center;
     line-height: 100px;
     font-weight: bold;
+    color : black;
 }
 
 .nav_theme:hover {
@@ -62,6 +63,11 @@ nav {
 
 #hebergementstitle {
     width: 100%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+    font-weight: bolder;
 }
 
 #hebergements_city {
@@ -100,6 +106,32 @@ nav {
 
 #more {
     width: 100%;
+    position: relative;
+    font-weight: bolder;
+    font-size: 18px;
+    bottom: 20px;
+    left : 30px;
+}
+
+.nameheb {
+    margin-left : 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 7px 0px 5px 15px ;
+}
+
+.price {
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+#populartitle {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+    font-weight: bolder;
 }
 
 #popular_container {
