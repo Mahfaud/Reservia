@@ -56,6 +56,7 @@ nav {
 
 .main_description {
     margin: 10px 70px;
+
 }
 
 
@@ -147,6 +148,18 @@ nav {
 
 
 
+#info_logo {
+    color: var(--reserviablue);
+    font-size: 15px;
+    font-weight: bolder;
+    border : 3px solid var(--reserviagrey);
+    padding: 5px 8px;
+    border-radius: 100%;
+}
+
+#info  {
+    font-size: 14px;
+}
 
 #hebergements_container {
     display: flex;
