@@ -24,7 +24,7 @@ header {
 }
 
 #logo {
-    margin: auto 20px;
+    margin: 20px auto 20px 70px;
 }
 
 nav {
@@ -102,6 +102,51 @@ nav {
     font-weight: bolder;
 
 }
+
+
+#filter_bar {
+    margin: 40px 70px;
+    width: 1000px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#filter_description {
+    align-self: center;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    position: relative;
+    border: 3px solid var(--reserviagrey);
+    font-size: 15px;
+}
+
+.filter_title {
+    padding: 10px 20px 10px 55px;
+}
+
+.filter_logo {
+    background-color: var(--reservialightblue);
+    border-radius: 25px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: var(--reserviablue);
+    left: -4px;
+    top: -4px;
+}
+
+.filter_logo::before {
+    position: absolute;
+    margin: 17px 17px 17px 15px;
+}
+
+
+
 
 #hebergements_container {
     display: flex;
