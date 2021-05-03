@@ -4,6 +4,7 @@
         <title>Reservia</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/89883c4bc1.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -19,8 +20,42 @@
         <main>
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
+
+
+
+            <div id="search_bar">
+                <i id="search_logo" class="fas fa-map-marker-alt"></i>
+                <input type="text" id="search_input">
+                <button>Rechercher</button>
+            </div>
+
+
+
+            <div id="filter_bar">
+                <h3 id="filter_title">Filtres</h3>
+                <div class="filter">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3 class="filter_title">Economique</h3>
+                </div>
+                <div class="filter">
+                    <i class="fas fa-child"></i>
+                    <h3 class="filter_title">Familial</h3>
+                </div>
+                <div class="filter">
+                    <i class="fas fa-heart"></i>
+                    <h3 class="filter_title">Romantique</h3>
+                </div>
+                <div class="filter">
+                    <i class="fas fa-dog"></i>
+                    <h3 class="filter_title">Animaux autorisés</h3>
+                </div>
+            </div>
+
+
             <p><span id="info">i</span> Plus de 500 logements disponibles dans cette ville</p>
             
+
+
             <div id="hebergements_container">
                 <div id="hebergements_city">
                     <h3 id="hebergementstitle">Hébergements à Marseille</h3>
@@ -68,6 +103,8 @@
                     </div>
                     <p id="more">Afficher plus</p>
                 </div>
+
+
 
                 <div id="popular_container">
                     <h3 id="populartitle">Les plus populaires</h3>
