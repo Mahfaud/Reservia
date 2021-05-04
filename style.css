@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 html {
     --reserviablue: #0065FC ;
@@ -19,23 +19,28 @@ html {
     color: black;
 }
 
+
+
+
 header {
     display: flex;
     height: 100px;
 }
 
-#logo {
+#headerLogo {
     margin: 20px auto 20px 70px;
 }
 
-nav {
+
+
+#navBar {
     display: flex;
     height: 100%;
     width: 450px;
     margin-left: auto;
 }
 
-.nav_theme {
+.navLinks {
     font-size: 17px;
     height: 100%;
     width: 150px;
@@ -45,24 +50,39 @@ nav {
     color : black;
 }
 
-.nav_theme:hover {
+.navLinks:hover {
     color: var(--reserviablue);
     border-top: 2px solid var(--reserviablue); 
 }
 
-#signin {
+#navSignin {
     color : var(--reserviablue);
     font-weight: bolder;
 }
 
-.main_description {
-    margin: 10px 70px;
 
+
+main {
+    margin: 0px 70px
+}
+
+.mainTitle {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.mainDescription {
+    font-size: 14px;
 }
 
 
-#search_bar {
-    margin : 20px 70px;
+
+
+
+#searchBar {
+    margin : 20px 0px;
     display: flex;
     overflow: hidden;
     border: 1px solid var(--reserviagrey);
@@ -72,7 +92,7 @@ nav {
 }
 
 
-#search_logo {
+#searchLogo {
     height: 50px;
     width: 50px;
     border: none;
@@ -82,19 +102,22 @@ nav {
     
 }
 
-#search_logo::before {
+#searchLogo::before {
     position: absolute;
     margin-left: 17px;
     margin-top: 17px;
 }
 
-#search_input {
+#searchInput {
     height: 46px;
     width: 200px;
     border: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
-#search_btn {
+#searchBtn {
     height: 46px;
     width: 150px;
     border: none;
@@ -106,19 +129,21 @@ nav {
 }
 
 
-#filter_bar {
-    margin: 40px 70px;
+
+
+#filterBar {
+    margin: 40px 0px;
     width: 1000px;
     height: 50px;
     display: flex;
     justify-content: space-between;
 }
 
-#filter_description {
+#filterDescription {
     align-self: center;
 }
 
-.filter {
+.filterLinks {
     display: flex;
     align-items: center;
     border-radius: 25px;
@@ -127,11 +152,11 @@ nav {
     font-size: 15px;
 }
 
-.filter_title {
+.filterTitle {
     padding: 10px 20px 10px 55px;
 }
 
-.filter_logo {
+.filterLogo {
     background-color: var(--reservialightblue);
     border-radius: 25px;
     position: absolute;
@@ -142,14 +167,16 @@ nav {
     top: -4px;
 }
 
-.filter_logo::before {
+.filterLogo::before {
     position: absolute;
     margin: 17px 17px 17px 15px;
 }
 
 
 
-#info_logo {
+
+
+#infoLogo {
     color: var(--reserviablue);
     font-size: 15px;
     font-weight: bolder;
@@ -158,39 +185,30 @@ nav {
     border-radius: 100%;
 }
 
-#info  {
-    font-size: 14px;
-}
 
-#hebergements_container {
+
+
+#hebergementBox {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    height: 700px;
+    height: 650px;
+    margin: 15px 0px;
 }
 
-#hebergementstitle {
-    width: 100%;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    font-size: 22px;
-    font-weight: bolder;
-}
-
-#hebergements_city {
+#hebergementCity {
     background-color: var(--reserviagrey);
     border-radius: 5%;
-    margin : 20px 70px;
     display: flex;
     flex-wrap: wrap;
-    width: 52%;
-    height: 650px;
+    width: 70%;
+    height: 100%;
 }
 
-.hebergements {
-    height: 200px;
-    width: 300px;
+.hebergementLinks {
+    height: 35%;
+    width: 30%;
     margin: 20px 10px;
     overflow: hidden;
     border: 4px solid white;
@@ -198,13 +216,13 @@ nav {
     position: relative;
 }
 
-.hebergementsimg {
-    height: 200px;
-    width: 300px;
+.hebergementImg {
+    height: 100%;
+    width: 100%;
     size: cover;
 }
 
-.descriptionheb {
+.hebergementDescription {
     background-color: white;
     width: 100%;
     height: 60px;
@@ -212,51 +230,36 @@ nav {
     bottom: 0;
 }
 
-#more {
-    width: 100%;
-    position: relative;
-    font-weight: bolder;
-    font-size: 18px;
-    bottom: 20px;
-    left : 30px;
-}
 
-.nameheb {
+.placeTitle {
     margin-left : 15px;
     font-size: 16px;
     font-weight: bold;
     margin: 7px 0px 5px 15px ;
 }
 
-.price {
+.placePrice {
     margin-left: 15px;
     font-size: 13px;
 }
 
-#populartitle {
-    width: 100%;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    font-size: 22px;
-    font-weight: bolder;
-}
 
-#popular_container {
+
+
+#popularCity {
     background-color: var(--reserviagrey);
-    margin : 20px 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 25%;
-    height: 650px;
+    width: 28%;
+    height: 100%;
     border-radius: 5%;
 }
 
-.popular {
+.popularLinks {
     margin: auto;
-    height: 150px;
-    width: 350px;
+    height: 25%;
+    width: 80%;
     overflow: hidden;
     border: 4px solid white;
     border-radius: 10%;
@@ -264,33 +267,34 @@ nav {
     position: relative;
 }
 
-.popularimg {
-    height: 150px;
-    width: 350px;
+.popularImg {
+    height: 100%;
+    width: 50%;
     size: cover
 }
 
-.descriptionbest {
+.popularDescription {
     background-color: white;
-    width: 180px;
+    width: 50%;
     height: 100%;
     position : absolute;
     bottom: 0;
     right: 0px;
 }
 
-#activities_container { 
+
+
+
+#activityCity { 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
+    width: 100%;
     height: 600px;
-    margin: 10px 70px;
 }
 
-.activity{
-    height: 45%;
+.activityLinks{
+    height: 46%;
     width: 23%;
     margin: 10px 0px;
     border-radius: 25px;
@@ -298,13 +302,13 @@ nav {
     position: relative;
 }
 
-.activity_img {
+.activityImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.activity_title {
+.activityTitle {
     position: absolute;
     background-color: white;
     width: 100%;
@@ -314,7 +318,7 @@ nav {
     padding: 15px;
 }
 
-.activitybig{
+.activityHeight{
     height: 100%;
 }
 
@@ -326,13 +330,13 @@ footer {
     display: flex;
 }
 
-.footer_theme {
+.footerTheme {
     width: 25%;
     height: 80%;
     margin : 30px 60px;
 }
 
-.footer_title {
+.footerTitle {
     font-weight: 900;
     font-size: 18px;
     margin : 15px 0px;
