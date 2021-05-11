@@ -295,7 +295,10 @@ main {
 }
 
 
-
+#activityMainTitle {
+    width: auto;
+    height: auto;
+}
 
 #activityCity { 
     display: flex;
@@ -338,7 +341,7 @@ footer {
     margin-top: 50px;
     background-color: var(--reserviagrey);
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
 }
 
