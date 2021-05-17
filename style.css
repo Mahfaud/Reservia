@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
     --reserviablue: #0065FC ;
@@ -24,6 +24,19 @@ button {
     cursor: pointer;
 }
 
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+.description {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
 /* ------------------------------------------------- HEADER -------------------------------------------------------*/
 header {
     display: flex;
@@ -32,499 +45,149 @@ header {
     align-items: center;
 }
 
-#headerLogo {
-    margin-left : 70px;
-    height: 45px;
-    width : 97px;
-    margin-right : auto;
+/* Marge intérieure pour tout le site sauf le footer*/
+main, header {
+    padding: 0px 70px;
 }
 
-/* ------------------------------------------------- BARRE DE NAVIGATION -------------------------------------------------------*/
+/* Taille du logo du Header */
+#headerLogo {
+    height: 45px;
+    width: 97px;
+    margin-right: auto;
+}
 
+/* Style du conteneur pour la barre de navigation*/
 #navBar {
     display: flex;
+    width: 300px;
     height: 100%;
-    width: auto;
 }
 
+/* Style des liens de navigations */
 .navLinks {
-    font-size: 17px;
+    font-weight: 500;
     height: 100%;
-    width: 150px;
-    text-align: center;
     line-height: 100px;
-    font-weight: bold;
-    color : black;
+    width: 50%;
+    text-align: center;
 }
 
+/* Effets des liens de navigations au survol */
 .navLinks:hover {
     color: var(--reserviablue);
     border-top: 2px solid var(--reserviablue); 
 }
 
+/* Style du lien pour l'inscription */
 #navSignin {
-    color : var(--reserviablue);
-    font-weight: 900;
-    font-size: 18px;
-}
-
-
-/* ------------------------------------------------- MAIN -------------------------------------------------------*/
-
-main {
-    margin: 0px 70px
-}
-/* Style des titres principaux */
-.mainTitle {
-    font-size: 20px;
     font-weight: bold;
-    width: 100%;
-    margin: 15px 0px;
-}
-
-/* Taille des descriptions principales */
-.mainDescription {
-    font-size: 14px;
-}
-
-
-
-
-/* ---------------------------- Barre de recherche ----------------------------- */
-
-/* Style de la barre de recherche */
-#searchBar {
-    margin : 20px 0px;
-    display: flex;
-    overflow: hidden;
-    border: 1px solid var(--reserviagrey);
-    height: 50px;
-    width: 400px;
-    border-radius: 20px;
-}
-
-/* Style du SVG de la barre de recherche */
-#searchLogo {
-    height: 50px;
-    width: 50px;
-    border: none;
-    background-color: var(--reserviagrey);
-    color: rgb(77, 77, 77);
-    vertical-align: middle;
-    
-}
-
-/* Centrage du logo de la barre de recherche */
-#searchLogo::before {
-    position: absolute;
-    margin-left: 17px;
-    margin-top: 17px;
-}
-/* Style du champ de recherche */
-#searchInput {
-    height: 46px;
-    width: 200px;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
+    color: var(--reserviablue);
+    width: 100px;
     text-align: center;
 }
 
-/* Style du bouton de recherche */
-#searchBtn {
-    height: 46px;
-    width: 150px;
-    background-color: var(--reserviablue);
-    color: white;
-    font-size: 16px;
-    font-weight: bolder;
-}
+/* ---------------------------------------------------------- MAIN ------------------------------------------------------------- */
 
-
-
-/* ---------------------------- Filtres ----------------------------- */
-
-/* Style de la barre pour les filtres */
-#filterBar {
-    margin: 40px 0px;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-/* Alignement du Titre de la barre pour les filtres */
-#filterDescription {
-    align-self: center;
-}
-
-/* Style des boutons de filtrage */
-.filterBtn {
-    margin: 5px 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
-    position: relative;
-    border: 3px solid var(--reserviagrey);
-    font-size: 15px;
-}
-
-/* Marge sur les titres des boutons de filtrages */
-.filterTitle {
-    padding: 10px 20px 10px 55px;
-}
-
-/* Style et positionnement des SVG des boutons de filtrages */
-.filterLogo {
-    background-color: var(--reservialightblue);
-    border-radius: 25px;
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    color: var(--reserviablue);
-    left: -4px;
-    top: -4px;
-}
-
-/* Positionnement des SVG des boutons de filtrages */
-.filterLogo::before {
-    position: absolute;
-    margin: 20px 0px 0px -10px;
-}
-
-
-/* Style du logo et de la description de l'information de la ville */
-#infoLogo {
-    color: var(--reserviablue);
-    font-size: 15px;
-    font-weight: bolder;
-    border : 3px solid var(--reserviagrey);
-    padding: 5px 8px;
-    border-radius: 100%;
-    margin-right: 5px;
-}
-
-
-
-/* ---------------------------- DIV POUR HEBERGEMENTS ----------------------------- */
-
-/* Style du conteneur qui contient les div pour les hébergements et les plus populaires*/
 #hebergementBox {
+    margin: 20px 0px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    height: 650px;
-    margin: 15px 0px;
 }
 
-/* Style de la div des hébergements */
-#hebergementCity {
-    background-color: var(--reserviagrey);
-    border-radius: 5%;
+#cityTitle {
+    width: 100%;
+    margin: 10px;
+}
+
+.containerStyle {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 70%;
-    height: 100%;
-    padding: 15px 35px;
-}
-
-/* Style des liens pour les hébergements */
-.hebergementLinks {
-    height: 37%;
-    width: 32%;
-    overflow: hidden;
-    border: 4px solid white;
-    border-radius: 10%;
-    position: relative;
-}
-
-/* Tailles des images des hébergements */
-.hebergementImg {
-    height: 100%;
-    width: 100%;
-    size: cover;
-}
-
-/* Style des descriptions des hébergements */
-.hebergementDescription {
-    background-color: white;
-    width: 100%;
-    height: 60px;
-    position : absolute;
-    bottom: 0;
-}
-
-/* Style de tous les noms des hotels */
-.placeTitle {
-    margin-left : 15px;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 7px 0px 5px 15px ;
-}
-
-/* Style de tous les prix */
-.placePrice {
-    margin-left: 15px;
-    font-size: 13px;
-}
-
-/*------------------------------------------------------------*/
-
-/* Style pour la div des plus populaires */
-#popularCity {
-    background-color: var(--reserviagrey);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 28%;
-    height: 100%;
-    border-radius: 5%;
-    padding: 15px 35px;
-}
-
-/* Style de la div du titre des plus populaires */
-#popularTitleBox {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 15px;
-    height: 10%;
-}
-
-/* Style de la div qui contient tous les liens des plus populaires */
-#popularLinksBox {
-    display: flex;
-    height: 90%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-/* Style des liens pour les plus populaires */
-.popularLinks {
-    height: 30%;
-    width: 100%;
-    overflow: hidden;
-    border: 4px solid white;
-    border-radius: 10%;
-    object-fit: fill;
-    position: relative;
-}
-
-/* Taille des images pour les plus populaires */
-.popularImg {
-    height: 100%;
-    width: 50%;
-    size: cover;
-}
-
-/* Style des descriptions pour les liens des plus populaires */
-.popularDescription {
-    background-color: white;
-    width: 50%;
-    height: 100%;
-    position : absolute;
-    bottom: 0;
-    right: 0;
-}
-
-/*------------------------------------------------------------*/
-
-/* Style de la div pour les activités */
-#activityCity { 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 600px;
-}
-
-/* Style des liens pour les activités */
-.activityLinks{
-    height: 46%;
-    width: 23%;
-    margin: 10px 0px;
     border-radius: 25px;
+    background-color: var(--reserviagrey);
+}
+
+#popularCity {
+    padding: 30px;
+    width: 450px;
+    height: 800px;
+    margin-left: 50px;
+}
+
+#hebergementCity {
+    padding: 30px;
+    width: 1260px;
+    height: 800px;
+}
+
+.hebergementBorderStyle {
     overflow: hidden;
+    border: 4px solid white;
+    border-radius: 10%;
     position: relative;
 }
 
-/* Taille des images pour les activités */
-.activityImg {
+.hebergementLinks {
+    height: 300px;
+    width: 380px;
+    margin: 10px;
+}
+
+.descriptionBackground {
+    position: absolute;
+    background-color: white;
+}
+
+.hebergementDescriptionPos {
     width: 100%;
-    height: 100%;
+    height: 30%;
+    bottom: 0;
+    padding: 10px;
+}
+
+.hebergementImg {
+    height: 80%;
+    width: 100%;
     object-fit: cover;
 }
 
-/* Style des titres pour les activités */
-.activityTitle {
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 50px;
-    bottom: 0;
-    left: 0;
-    padding: 15px;
-}
-
-/* Taille des activités qui prennent 100% de hauteurs */
-.activityHeight{
-    height: 100%;
-}
-
-/* ---------------------------- FOOTER ----------------------------- */
-
-/* Style du footer */
-footer {
-    margin-top: 50px;
-    background-color: var(--reserviagrey);
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
-/* Style des divs du footer */
-.footerTheme {
-    width: 25%;
-    height: 80%;
-    margin : 30px 60px;
-}
-
-/* Style des titres du footer */
-.footerTitle {
-    font-weight: 900;
+#moreBtn {
+    margin: 10px;
     font-size: 18px;
-    margin : 15px 0px;
+    font-weight: bolder;
 }
 
-/* Style de la liste des thèmes du footer*/
-li {
-    margin-top: 5px;
-    font-size: 15px;
+#popularTitleBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+#popularLinksBox {
+    height: 100%;
+    width: 100%;
+}
+
+.popularLinks {
+    display: flex;
+    margin: 50px auto;
+    height: 170px;
+    width: 350px;
+}
+
+.popularImg {
+    height: 100%;
+    width: 50%;
+}
+
+.popularDescriptionPos {
+    width: 60%;
+    height: 100%;
+    right: 0;
+    padding: 10px;
 }
 
 
-
-
-@media (max-width: 1024px) {
-    #hebergementBox {
-        height: auto;
-    }
-    #filterBar {
-        height: auto;
-    }
-    #popularCity {
-        order: 1;
-        width: 100%;
-        height: 400px;
-        margin-bottom: 15px;
-    }
-    #hebergementCity {
-        order: 2;
-        width: 100%;
-        height: 66%;
-    }
-    .hebergementLinks {
-        width: 50%;
-        height: 250px;
-    }
-    .popularLinks {
-        width: 30%;
-        height: 80%;
-    }
-    #popularLinksBox {
-        flex-direction: column;
-    }
-    .popularImg {
-        height: 100%;
-        width: 100%;
-        size: cover
-    }
-    .popularDescription {
-        height: 30%;
-        width: 100%;
-        bottom : 0;
-        left : 0;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    #headerLogo {
-        margin: 0px 15px;
-        order: 1;
-    }
-    #navSignin {
-        order: 2;
-    }
-    #navBar {
-        width: 100%;
-        order: 3;
-    }
-    .navLinks {
-        width: 50%;
-        height: 100px;
-    }
-    .navLinks:hover {
-        color: var(--reserviablue);
-        border-bottom: 2px solid var(--reserviablue); 
-        border-top: none;
-    }
-    main {
-        margin: 0;
-    }
-    .mainTitle, h1{
-        font-size: 25px;
-    }
-    .title, .description{
-        margin: 10px 15px;
-    }
-    
-    #searchBar {
-        margin: 10px 15px;
-    }
-    #filterBar {
-        margin: 20px 15px;
-    }
-    #hebergementBox, #activityCity {
-        height: auto;
-        border-radius: 0%;
-    }
-    #popularCity {
-        height: 750px;
-        border-radius: 0%;
-    }
-    #hebergementCity {
-        background-color: white;
-    }
-    #hebergementCity, #popularCity {
-        width: 100%;
-        padding: 25px;
-    }
-    #popularLinksBox {
-        flex-direction: column;
-        height: 600px;
-    }
-    #activityCity {
-        padding: 25px;
-    }
-    .hebergementLinks, .popularLinks, .activityLinks {
-        width: 100%;
-        height: 180px;
-        margin: 10px 0px;
-    }
-    .hebergementLinks, .activityLinks {
-        height : 240px;
-    }
-    footer {
-        flex-direction: column;
-        height: auto;
-    }
-    .footerTitle, li {
-        width: 300px;
-    }
-}
+/* --------------------- ACTIVITY ----------------------*/
