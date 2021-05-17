@@ -32,6 +32,10 @@ h2 {
     font-size: 17px;
 }
 
+h3 {
+    font-size: 18px;
+}
+
 .description {
     font-size: 14px;
     margin: 5px 0px;
@@ -89,17 +93,133 @@ main, header {
 
 /* ---------------------------------------------------------- MAIN ------------------------------------------------------------- */
 
+/* ---------------------------- Barre de recherche ----------------------------- */
+
+/* Style de la barre de recherche */
+#searchBar {
+    margin : 20px 0px;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid var(--reserviagrey);
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* Style du SVG de la barre de recherche */
+#searchLogo {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: var(--reserviagrey);
+    color: rgb(77, 77, 77);
+    vertical-align: middle;
+    
+}
+
+/* Centrage du logo de la barre de recherche */
+#searchLogo::before {
+    position: absolute;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+/* Style du champ de recherche */
+#searchInput {
+    height: 46px;
+    width: 200px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style du bouton de recherche */
+#searchBtn {
+    height: 46px;
+    width: 150px;
+    background-color: var(--reserviablue);
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* ---------------------------- Filtres ----------------------------- */
+
+/* Style de la barre pour les filtres */
+#filterBar {
+    margin: 40px 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Alignement du Titre de la barre pour les filtres */
+#filterDescription {
+    align-self: center;
+}
+
+/* Style des boutons de filtrage */
+.filterBtn {
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    position: relative;
+    border: 3px solid var(--reserviagrey);
+    font-size: 15px;
+}
+
+/* Marge sur les titres des boutons de filtrages */
+.filterTitle {
+    padding: 10px 20px 10px 55px;
+}
+
+/* Style et positionnement des SVG des boutons de filtrages */
+.filterLogo {
+    background-color: var(--reservialightblue);
+    border-radius: 25px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: var(--reserviablue);
+    left: -4px;
+    top: -4px;
+}
+
+/* Positionnement des SVG des boutons de filtrages */
+.filterLogo::before {
+    position: absolute;
+    margin: 20px 0px 0px -10px;
+}
+
+
+/* Style du logo et de la description de l'information de la ville */
+#infoLogo {
+    color: var(--reserviablue);
+    font-size: 15px;
+    font-weight: bolder;
+    border : 2px solid var(--reserviagrey);
+    padding: 5px 8px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+/* ---------------------------- DIV POUR HEBERGEMENTS ----------------------------- */
+
+/* Style de la div des hébergement */
 #hebergementBox {
     margin: 20px 0px;
     display: flex;
     justify-content: space-between;
 }
 
+/* Style de l'ancre et titre des hébergements */
 #cityTitle {
     width: 100%;
     margin: 10px;
 }
 
+/*  Style des div des hébergements */
 .containerStyle {
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +227,7 @@ main, header {
     background-color: var(--reserviagrey);
 }
 
+/* Marge et taille de la div des plus populaires */
 #popularCity {
     padding: 30px;
     width: 450px;
@@ -114,12 +235,14 @@ main, header {
     margin-left: 50px;
 }
 
+/* Marge et taille de la div des hébergements de la ville*/
 #hebergementCity {
     padding: 30px;
     width: 1260px;
     height: 800px;
 }
 
+/* Style de tous les liens des hébergements */
 .hebergementBorderStyle {
     overflow: hidden;
     border: 4px solid white;
@@ -127,17 +250,20 @@ main, header {
     position: relative;
 }
 
+/* Marge et taille des liens des hébergements*/
 .hebergementLinks {
     height: 300px;
     width: 380px;
     margin: 10px;
 }
 
+/* Background et position des descriptions de tous les liens des hébergements*/
 .descriptionBackground {
     position: absolute;
     background-color: white;
 }
 
+/* Positionnement et taille des descriptions des hébergements de la ville*/
 .hebergementDescriptionPos {
     width: 100%;
     height: 30%;
@@ -145,18 +271,21 @@ main, header {
     padding: 10px;
 }
 
+/* Taille des images des hébergements */
 .hebergementImg {
     height: 80%;
     width: 100%;
     object-fit: cover;
 }
 
+/* Style du bouton Afficher plus*/
 #moreBtn {
     margin: 10px;
     font-size: 18px;
     font-weight: bolder;
 }
 
+/* Style du titre des plus populaires */
 #popularTitleBox {
     width: 100%;
     display: flex;
@@ -165,11 +294,13 @@ main, header {
     margin: 10px;
 }
 
+/* Taille de la div qui contient les liens des plus populaires*/
 #popularLinksBox {
     height: 100%;
     width: 100%;
 }
 
+/* Style des liens des plus populaires*/
 .popularLinks {
     display: flex;
     margin: 50px auto;
@@ -177,11 +308,14 @@ main, header {
     width: 350px;
 }
 
+/* Taille des images des plus populaires */
 .popularImg {
     height: 100%;
     width: 50%;
+    object-fit: cover;
 }
 
+/* Taille et positionnement de la description des plus populaires */
 .popularDescriptionPos {
     width: 60%;
     height: 100%;
@@ -191,3 +325,83 @@ main, header {
 
 
 /* --------------------- ACTIVITY ----------------------*/
+
+/* Style de la div des activités */
+#activityBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1765px;
+    height: 640px;
+    margin: 20px 0px;
+}
+
+/*  Style de la div qui regroupes les liens des activités */
+#activityCity {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+}
+
+/* Style des liens des activités */
+.activityLinks {
+    height: 46%;
+    width: 420px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Taille des activités mise en avant */
+.activityFocus {
+    height: 100%;
+}
+
+/* Positionnement de la description des activités */
+.activityDescriptionPos {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    padding: 15px 25px;
+}
+
+/* Taille des images des activités */
+.activityImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------- FOOTER ----------------------------- */
+
+/* Style du footer */
+footer {
+    margin-top: 50px;
+    background-color: var(--reserviagrey);
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* Style des divs du footer */
+.footerTheme {
+    width: 25%;
+    height: 80%;
+    margin : 30px 60px;
+}
+
+/* Marge au dessus des listes à puces */
+ul {
+    margin-top : 15px;
+}
+
+/* Style de la liste des thèmes du footer*/
+li {
+    margin-top: 5px;
+    font-size: 15px;
+}
