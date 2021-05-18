@@ -211,6 +211,7 @@ main, header {
     margin: 20px 0px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 /* Style de l'ancre et titre des hébergements */
@@ -232,13 +233,12 @@ main, header {
     padding: 30px;
     width: 450px;
     height: 800px;
-    margin-left: 50px;
 }
 
 /* Marge et taille de la div des hébergements de la ville*/
 #hebergementCity {
     padding: 30px;
-    width: 1260px;
+    width: 72%;
     height: 800px;
 }
 
@@ -332,9 +332,8 @@ main, header {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1765px;
+    width: 100%;
     height: 640px;
-    margin: 20px 0px;
 }
 
 /*  Style de la div qui regroupes les liens des activités */
@@ -350,7 +349,7 @@ main, header {
 
 /* Style des liens des activités */
 .activityLinks {
-    height: 46%;
+    height: 48%;
     width: 420px;
     border-radius: 25px;
     overflow: hidden;
@@ -365,7 +364,7 @@ main, header {
 /* Positionnement de la description des activités */
 .activityDescriptionPos {
     width: 100%;
-    height: 50px;
+    height: 60px;
     bottom: 0;
     padding: 15px 25px;
 }
@@ -405,3 +404,89 @@ li {
     margin-top: 5px;
     font-size: 15px;
 }
+
+/*-----------------------------------------------------------------------*/
+
+/* Version Laptop */
+
+@media (max-width: 1900px), (max-device-width: 1900px) {
+    #hebergementCity {
+        width: 1175px;
+    }
+    .hebergementLinks {
+        height: 300px;
+        width: 350px;
+    }
+    .activityLinks {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1800px), (max-device-width: 1800px) {
+    #hebergementCity {
+        width: 1030px;
+    }
+    .hebergementLinks {
+        height: 250px;
+        width: 300px;
+    }
+    .activityLinks {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1655px), (max-device-width: 1655px) {
+    #hebergementCity {
+        width: 880px;
+        height: 700px;
+    }
+    .hebergementLinks {
+        height: 250px;
+        width: 250px;
+    }
+    #popularCity {
+        height: 700px;
+    }
+    .popularLinks {
+        margin: 25px auto;
+    }
+    .activityLinks {
+        width: 330px;
+    }
+}
+
+@media (max-width: 1500px), (max-device-width: 1500px) {
+    #hebergementCity {
+        width: 800px;
+    }
+    .hebergementLinks {
+        height: 225px;
+        width: 225px;
+    }
+    .activityLinks {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1420px), (max-device-width: 1420px) {
+    #hebergementCity {
+        width: 720px;
+        height: 600px;
+    }
+    .hebergementLinks {
+        height: 200px;
+        width: 200px;
+    }
+    #popularCity {
+        height: 600px;
+    }
+    .popularLinks {
+        height : 140px;
+        width : 350px;
+    }
+    .activityLinks {
+        width: 280px;
+    }
+}
+
+/* Version tablette */
