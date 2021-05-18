@@ -214,6 +214,18 @@ main, header {
     width: 100%;
 }
 
+/* Style des notes des hébergements*/
+.rateContainer {
+    display: flex;
+}
+
+/* Couleur des étoiles */
+.blueStar {
+    color: var(--reserviablue)
+}
+.greyStar {
+    color: grey
+}
 /* Style de l'ancre et titre des hébergements */
 #cityTitle {
     width: 100%;
@@ -238,7 +250,7 @@ main, header {
 /* Marge et taille de la div des hébergements de la ville*/
 #hebergementCity {
     padding: 30px;
-    width: 72%;
+    width: 72.5%;
     height: 800px;
 }
 
@@ -469,6 +481,15 @@ li {
 }
 
 @media (max-width: 1420px), (max-device-width: 1420px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .description {
+        font-size: 13px;
+    }
     #hebergementCity {
         width: 720px;
         height: 600px;
@@ -490,3 +511,60 @@ li {
 }
 
 /* Version tablette */
+
+@media (max-width: 1330px), (max-device-width: 1330px) {
+    h1 {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    #hebergementBox {
+        flex-direction: column;
+        height: 1525px;
+    }
+    #popularCity {
+        order: 1;
+        width: 100%;
+        height: 300px;
+    }
+    #hebergementCity {
+        order: 2;
+        height: 1200px;
+        width: 100%;
+        justify-self: center;
+    }
+    .hebergementLinks {
+        height: 300px;
+        width: 45%;
+        margin: 13px;
+    }
+    #popularLinksBox {
+        display: flex;
+        justify-content: space-between;
+    }
+    .popularLinks {
+        height: 150px;
+        width: 30%;
+    }
+    #activityBox {
+        height: auto;
+    }
+    #activityCity {
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .activityLinks {
+        width: 45%;
+        height: 350px;
+        margin: 13px;
+    }
+    .activityFocus {
+        width: 100%;
+        height: 350px;
+    }
+}
