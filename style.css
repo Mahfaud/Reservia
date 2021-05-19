@@ -278,7 +278,6 @@ main, header {
 /* Positionnement et taille des descriptions des hébergements de la ville*/
 .hebergementDescriptionPos {
     width: 100%;
-    height: 30%;
     bottom: 0;
     padding: 10px;
 }
@@ -621,5 +620,47 @@ li {
     }
     .popularLinks {
         height: 200px;
+    }
+}
+
+@media (max-width: 584px), (max-device-width: 584px) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    header {
+        height: 200px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+    }
+    #headerLogo {
+        order: 1;
+        margin: 0;
+    }
+    #navSignin {
+        order: 2;
+    }
+    #navBar {
+        order: 3;
+        width: 100%;
+        height: 100px;
+    }
+}
+
+@media (max-width: 470px), (max-device-width: 470px) {
+    .hebergementLinks, .activityLinks {
+        height: 200px;
+    }
+    .popularLinks {
+        height: 150px;
     }
 }
