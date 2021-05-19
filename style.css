@@ -217,6 +217,11 @@ main, header {
     display: flex;
 }
 
+/* Effets ombre sur les liens */
+.boxShadow {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.377) ;
+}
+
 /* Couleur des étoiles */
 .blueStar {
     color: var(--reserviablue)
