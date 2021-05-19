@@ -172,6 +172,11 @@ main, header {
     padding: 10px 20px 10px 55px;
 }
 
+/* Changement de couleur au survol des boutons de filtrages */
+#economyBtn:hover, #familyBtn:hover ,#romanticBtn:hover ,#animalBtn:hover {
+    background-color: var(--reserviagrey);
+}
+
 /* Style et positionnement des SVG des boutons de filtrages */
 .filterLogo {
     background-color: var(--reservialightblue);
