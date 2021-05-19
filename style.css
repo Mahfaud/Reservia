@@ -149,7 +149,7 @@ main, header {
 #filterBar {
     margin: 40px 0px;
     width: 100%;
-    height: 50px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -568,3 +568,42 @@ li {
         height: 350px;
     }
 }
+
+@media (max-width: 1050px), (max-device-width: 1050px) {
+    #hebergementBox {
+        height: auto;
+    }
+    #hebergementCity {
+        background-color: white;
+    }
+    #popularCity {
+        height: 1025px;
+    }
+    #popularLinksBox {
+        flex-wrap: wrap;
+    }
+    .popularLinks {
+        height: 250px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px), (max-device-width: 750px) {
+    main {
+        padding : 0px;
+    }
+    header, #mainBox, #activityBox {
+        padding : 0px 35px;
+    }
+    #popularCity {
+        border-radius: 0px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footerTheme {
+        width: 50%;
+    }
+}
+
+/* Version Mobile */
