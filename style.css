@@ -650,8 +650,8 @@ li {
     header {
         height: 200px;
         flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 0;
+        justify-content: space-between;
+        padding: 0px 20px;
     }
     #headerLogo {
         order: 1;
