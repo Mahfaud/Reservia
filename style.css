@@ -607,3 +607,19 @@ li {
 }
 
 /* Version Mobile */
+
+@media (max-width: 620px), (max-device-width: 620px) {
+    #hebergementCity , #activityCity{
+        height: auto;
+    }
+    .hebergementLinks, .activityLinks {
+        width: 100%;
+        height: 350px;
+    }
+    #popularCity {
+        height: auto;
+    }
+    .popularLinks {
+        height: 200px;
+    }
+}
