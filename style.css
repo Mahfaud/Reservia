@@ -20,7 +20,7 @@ html {
 }
 
 /* Tous les boutons ont l'effet cliquable lorsqu'on passe la souris dessus*/
-button {
+button, li{
     cursor: pointer;
 }
 
@@ -44,7 +44,7 @@ h3 {
 /* ------------------------------------------------- HEADER -------------------------------------------------------*/
 header {
     display: flex;
-    width: 100%;
+    max-width: 1900px;
     height: 100px;
     align-items: center;
 }
@@ -94,6 +94,9 @@ main, header {
 /* ---------------------------------------------------------- MAIN ------------------------------------------------------------- */
 
 /* ---------------------------- Barre de recherche ----------------------------- */
+main {
+    max-width: 1900px;
+}
 
 /* Style de la barre de recherche */
 #searchBar {
@@ -170,6 +173,8 @@ main, header {
 /* Marge sur les titres des boutons de filtrages */
 .filterTitle {
     padding: 10px 20px 10px 55px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* Changement de couleur au survol des boutons de filtrages */
@@ -404,7 +409,7 @@ main, header {
 footer {
     margin-top: 50px;
     background-color: var(--reserviagrey);
-    width: 100%;
+    max-width: 1900px;
     height: auto;
     display: flex;
 }
@@ -425,6 +430,10 @@ ul {
 li {
     margin-top: 5px;
     font-size: 15px;
+}
+
+li:hover {
+    text-decoration: underline;
 }
 
 /*-----------------------------------------------------------------------*/
