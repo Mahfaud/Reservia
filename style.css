@@ -131,7 +131,7 @@ main {
 }
 
 /* Style du bouton de recherche */
-#searchBtn {
+#searchButton {
     height: 46px;
     width: 150px;
     background-color: #0065FC;
@@ -140,7 +140,8 @@ main {
     font-weight: bolder;
 }
 
-#loopBtn {
+/* Style du bouton avec l'icone loop */
+#loopButton {
     display: none;
 }
 /* ---------------------------- Filtres ----------------------------- */
@@ -156,7 +157,7 @@ main {
 }
 
 /* Style des boutons de filtrage */
-.filterBtn {
+.filterButton {
     margin: 5px 10px;
     display: flex;
     align-items: center;
@@ -175,7 +176,7 @@ main {
 }
 
 /* Changement de couleur au survol des boutons de filtrages */
-#economyBtn:hover, #familyBtn:hover ,#romanticBtn:hover ,#animalBtn:hover {
+#economyButton:hover, #familyButton:hover ,#romanticButton:hover ,#animalButton:hover {
     background-color: #F2F2F2;
 }
 
@@ -300,7 +301,7 @@ main {
 }
 
 /* Style du bouton Afficher plus*/
-#moreBtn {
+#moreButton {
     margin: 10px;
     font-size: 18px;
     font-weight: bolder;
@@ -694,10 +695,10 @@ li:hover {
         width: 275px;
         position: relative;
     }
-    #searchBtn {
+    #searchButton {
         display: none;
     }
-    #loopBtn {
+    #loopButton {
         display: block;
         position: absolute;
         width: 50px;
@@ -706,7 +707,7 @@ li:hover {
         right: 0;
         border-radius: 20px;
     }
-    #loopBtn:hover {
+    #loopButton:hover {
         opacity: 0.8;
     }
     .fa-search {
