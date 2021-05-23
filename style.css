@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html {
-    --reserviablue: #0065FC ;
-    --reservialightblue: #DEEBFF ;
-    --reserviagrey: #F2F2F2 ;
-}
-
 /* Tout mettre à 0*/
 * {
     box-sizing: border-box;
@@ -79,14 +73,14 @@ main, header {
 
 /* Effets des liens de navigations au survol */
 .navLinks:hover {
-    color: var(--reserviablue);
-    border-top: 2px solid var(--reserviablue); 
+    color: #0065FC;
+    border-top: 2px solid #0065FC; 
 }
 
 /* Style du lien pour l'inscription */
 #navSignin {
     font-weight: bold;
-    color: var(--reserviablue);
+    color: #0065FC;
     width: 100px;
     text-align: center;
 }
@@ -103,7 +97,7 @@ main {
     margin : 20px 0px;
     display: flex;
     overflow: hidden;
-    border: 1px solid var(--reserviagrey);
+    border: 1px solid #F2F2F2;
     height: 50px;
     width: 400px;
     border-radius: 20px;
@@ -114,7 +108,7 @@ main {
     height: 50px;
     width: 50px;
     border: none;
-    background-color: var(--reserviagrey);
+    background-color: #F2F2F2;
     color: rgb(77, 77, 77);
     vertical-align: middle;
     
@@ -140,7 +134,7 @@ main {
 #searchBtn {
     height: 46px;
     width: 150px;
-    background-color: var(--reserviablue);
+    background-color: #0065FC;
     color: white;
     font-size: 16px;
     font-weight: bolder;
@@ -165,7 +159,7 @@ main {
     align-items: center;
     border-radius: 25px;
     position: relative;
-    border: 3px solid var(--reserviagrey);
+    border: 3px solid #F2F2F2;
     font-size: 15px;
 }
 
@@ -179,17 +173,17 @@ main {
 
 /* Changement de couleur au survol des boutons de filtrages */
 #economyBtn:hover, #familyBtn:hover ,#romanticBtn:hover ,#animalBtn:hover {
-    background-color: var(--reserviagrey);
+    background-color: #F2F2F2;
 }
 
 /* Style et positionnement des SVG des boutons de filtrages */
 .filterLogo {
-    background-color: var(--reservialightblue);
+    background-color: #DEEBFF;
     border-radius: 25px;
     position: absolute;
     height: 50px;
     width: 50px;
-    color: var(--reserviablue);
+    color: #0065FC;
     left: -4px;
     top: -4px;
 }
@@ -203,10 +197,10 @@ main {
 
 /* Style du logo et de la description de l'information de la ville */
 #infoLogo {
-    color: var(--reserviablue);
+    color: #0065FC;
     font-size: 15px;
     font-weight: bolder;
-    border : 2px solid var(--reserviagrey);
+    border : 2px solid #F2F2F2;
     padding: 5px 8px;
     border-radius: 100%;
     margin-right: 5px;
@@ -234,7 +228,7 @@ main {
 
 /* Couleur des étoiles */
 .blueStar {
-    color: var(--reserviablue)
+    color: #0065FC;
 }
 .greyStar {
     color: grey
@@ -250,7 +244,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     border-radius: 25px;
-    background-color: var(--reserviagrey);
+    background-color: #F2F2F2;
 }
 
 /* Marge et taille de la div des plus populaires */
@@ -408,7 +402,7 @@ main {
 /* Style du footer */
 footer {
     margin-top: 50px;
-    background-color: var(--reserviagrey);
+    background-color: #F2F2F2;
     max-width: 1900px;
     height: auto;
     display: flex;
@@ -440,7 +434,7 @@ li:hover {
 
 /* Version Laptop */
 
-@media (max-width: 1900px), (max-device-width: 1900px) {
+@media screen and (max-width: 1900px) {
     #hebergementCity {
         width: 1175px;
     }
@@ -453,7 +447,7 @@ li:hover {
     }
 }
 
-@media (max-width: 1800px), (max-device-width: 1800px) {
+@media screen and (max-width: 1800px) {
     #hebergementCity {
         width: 1030px;
     }
@@ -466,7 +460,7 @@ li:hover {
     }
 }
 
-@media (max-width: 1655px), (max-device-width: 1655px) {
+@media screen and (max-width: 1655px) {
     #hebergementCity {
         width: 880px;
         height: 700px;
@@ -486,7 +480,7 @@ li:hover {
     }
 }
 
-@media (max-width: 1500px), (max-device-width: 1500px) {
+@media screen and (max-width: 1500px) {
     #hebergementCity {
         width: 800px;
     }
@@ -499,7 +493,7 @@ li:hover {
     }
 }
 
-@media (max-width: 1420px), (max-device-width: 1420px) {
+@media screen and (max-width: 1420px) {
     h1 {
         font-size: 20px;
     }
@@ -531,7 +525,7 @@ li:hover {
 
 /* Version tablette */
 
-@media (max-width: 1330px), (max-device-width: 1330px) {
+@media screen and (max-width: 1330px) {
     h1 {
         font-size: 23px;
     }
@@ -588,7 +582,7 @@ li:hover {
     }
 }
 
-@media (max-width: 1050px), (max-device-width: 1050px) {
+@media screen and (max-width: 1050px) {
     #hebergementBox {
         height: auto;
     }
@@ -607,7 +601,7 @@ li:hover {
     }
 }
 
-@media (max-width: 750px), (max-device-width: 750px) {
+@media screen and (max-width: 750px) {
     main {
         padding : 0px;
     }
@@ -627,7 +621,7 @@ li:hover {
 
 /* Version Mobile */
 
-@media (max-width: 620px), (max-device-width: 620px) {
+@media screen and (max-width: 620px) {
     #hebergementCity , #activityCity{
         height: auto;
     }
@@ -643,7 +637,7 @@ li:hover {
     }
 }
 
-@media (max-width: 584px), (max-device-width: 584px) {
+@media screen and (max-width: 584px) {
     h1 {
         font-size: 18px;
     }
@@ -676,7 +670,7 @@ li:hover {
     }
 }
 
-@media (max-width: 470px), (max-device-width: 470px) {
+@media screen and (max-width: 470px) {
     .hebergementLinks, .activityLinks {
         height: 200px;
     }
