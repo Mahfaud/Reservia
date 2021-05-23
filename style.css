@@ -209,7 +209,7 @@ main {
 /* ---------------------------- DIV POUR HEBERGEMENTS ----------------------------- */
 
 /* Style de la div des hébergement */
-#hebergementBox {
+#hostingBox {
     margin: 20px 0px;
     display: flex;
     justify-content: space-between;
@@ -255,22 +255,22 @@ main {
 }
 
 /* Marge et taille de la div des hébergements de la ville*/
-#hebergementCity {
+#hostingCity {
     padding: 30px;
     width: 72.5%;
     height: 800px;
 }
 
 /* Style de tous les liens des hébergements */
-.hebergementBorderStyle {
+.hostingBorderStyle {
     overflow: hidden;
     border: 4px solid white;
-    border-radius: 10%;
+    border-radius: 20px;
     position: relative;
 }
 
 /* Marge et taille des liens des hébergements*/
-.hebergementLinks {
+.hostingLinks {
     height: 300px;
     width: 380px;
     margin: 10px;
@@ -283,14 +283,14 @@ main {
 }
 
 /* Positionnement et taille des descriptions des hébergements de la ville*/
-.hebergementDescriptionPos {
+.hostingDescriptionPos {
     width: 100%;
     bottom: 0;
     padding: 10px;
 }
 
 /* Taille des images des hébergements */
-.hebergementImg {
+.hostingImg {
     height: 80%;
     width: 100%;
     object-fit: cover;
@@ -435,10 +435,10 @@ li:hover {
 /* Version Laptop */
 
 @media screen and (max-width: 1900px) {
-    #hebergementCity {
+    #hostingCity {
         width: 1175px;
     }
-    .hebergementLinks {
+    .hostingLinks {
         height: 300px;
         width: 350px;
     }
@@ -448,10 +448,10 @@ li:hover {
 }
 
 @media screen and (max-width: 1800px) {
-    #hebergementCity {
+    #hostingCity {
         width: 1030px;
     }
-    .hebergementLinks {
+    .hostingLinks {
         height: 250px;
         width: 300px;
     }
@@ -461,11 +461,11 @@ li:hover {
 }
 
 @media screen and (max-width: 1655px) {
-    #hebergementCity {
+    #hostingCity {
         width: 880px;
         height: 700px;
     }
-    .hebergementLinks {
+    .hostingLinks {
         height: 250px;
         width: 250px;
     }
@@ -481,10 +481,10 @@ li:hover {
 }
 
 @media screen and (max-width: 1500px) {
-    #hebergementCity {
+    #hostingCity {
         width: 800px;
     }
-    .hebergementLinks {
+    .hostingLinks {
         height: 225px;
         width: 225px;
     }
@@ -503,11 +503,11 @@ li:hover {
     .description {
         font-size: 13px;
     }
-    #hebergementCity {
+    #hostingCity {
         width: 720px;
         height: 600px;
     }
-    .hebergementLinks {
+    .hostingLinks {
         height: 200px;
         width: 200px;
     }
@@ -535,7 +535,7 @@ li:hover {
     .description {
         font-size: 14px;
     }
-    #hebergementBox {
+    #hostingBox {
         flex-direction: column;
         height: 1525px;
     }
@@ -544,13 +544,13 @@ li:hover {
         width: 100%;
         height: 300px;
     }
-    #hebergementCity {
+    #hostingCity {
         order: 2;
         height: 1200px;
         width: 100%;
         justify-self: center;
     }
-    .hebergementLinks {
+    .hostingLinks {
         height: 300px;
         width: 45%;
         margin: 13px;
@@ -583,20 +583,20 @@ li:hover {
 }
 
 @media screen and (max-width: 1050px) {
-    #hebergementBox {
+    #hostingBox {
         height: auto;
     }
-    #hebergementCity {
+    #hostingCity {
         background-color: white;
     }
     #popularCity {
-        height: 1025px;
+        height: auto;
     }
     #popularLinksBox {
         flex-wrap: wrap;
     }
     .popularLinks {
-        height: 250px;
+        height: 200px;
         width: 90%;
     }
 }
@@ -622,10 +622,10 @@ li:hover {
 /* Version Mobile */
 
 @media screen and (max-width: 620px) {
-    #hebergementCity , #activityCity{
+    #hostingCity , #activityCity{
         height: auto;
     }
-    .hebergementLinks, .activityLinks {
+    .hostingLinks, .activityLinks {
         width: 100%;
         height: 350px;
     }
@@ -668,10 +668,14 @@ li:hover {
         width: 100%;
         height: 100px;
     }
+    .navLinks:hover {
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
 }
 
 @media screen and (max-width: 470px) {
-    .hebergementLinks, .activityLinks {
+    .hostingLinks, .activityLinks {
         height: 200px;
     }
     .popularLinks {
