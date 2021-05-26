@@ -622,95 +622,81 @@ li:hover {
     }
 }
 
-/* Version Mobile */
+/******************************* Version Mobile *************************************/
 
 @media screen and (max-width: 620px) {
-    #hostingCity , #activityCity{
-        height: auto;
-    }
-    .hostingLinks, .activityLinks {
-        width: 100%;
-        height: 350px;
-    }
-    #popularCity {
-        height: auto;
-    }
-    .popularLinks {
-        height: 200px;
-    }
-}
 
-@media screen and (max-width: 584px) {
+    main, header, footer {
+        min-width: 330px;
+    }
+
     h1 {
         font-size: 18px;
     }
+
     h2 {
         font-size: 16px;
     }
+
     h3 {
         font-size: 17px;
     }
+
     .description {
         font-size: 14px;
     }
+
+    /******************* HEADER *********************/
     header {
-        height: 150px;
+        height: 120px;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0px;
         margin-bottom: 10px;
     }
+
     #headerLogo {
         order: 1;
-        margin: 0px 35px;
+        margin: 0px 20px;
     }
+
     #navSignin {
         order: 2;
-        margin: 0px 35px;
+        margin: 0px 20px;
     }
+
     #navBar {
         order: 3;
         width: 100%;
-        height: 100px;
-    }
-    #filterTheme {
-        width: 100%;
-    }
-    .hostingLinks, .activityLinks {
-        width: 100%;
-        height: 270px;
-    }
-    #navBar {
         height: 50px;
     }
+
     .navLinks {
         height: 50px;
         line-height: 50px;
         border-bottom: solid 3px #F2F2F2;
     }
+
     .navLinks:hover {
         border-bottom: 3px solid #0065FC;
         border-top: none;
     }
-    .footerTheme {
-        width: 80%;
-    }
-}
 
-@media screen and (max-width: 470px) {
-    .hostingLinks, .activityLinks {
-        height: 200px;
-    }
-    .popularLinks {
-        height: 150px;
-    }
+
+    /******** Barre de recherche ******/
     #searchBar {
         width: 275px;
         position: relative;
     }
+
     #searchButton {
         display: none;
     }
+    #searchInput {
+        text-align: left;
+        padding-left: 5px;
+    }
+
     #loopButton {
         display: block;
         position: absolute;
@@ -720,10 +706,54 @@ li:hover {
         right: 0;
         border-radius: 20px;
     }
+
     #loopButton:hover {
         opacity: 0.8;
     }
+
     .fa-search {
         color: #F2F2F2;
+    }
+
+    /********** Barre de filtrage ***********/
+    #filterTheme {
+        width: 100%;
+    }
+
+    .filterTitle{
+        font-size: 14px;
+        padding: 10px 5px 10px 40px;
+    }
+
+    .filterButton {
+        margin: 10px 5px;
+    }
+
+    .filterLogo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .filterLogo::before {
+        margin: 13px 0px 0px -10px;
+    }
+
+    /*********** Hébergement et Activités *************/
+    .hostingLinks, .activityLinks {
+        height: 200px;
+        width: 100%;
+    }
+
+    #hostingCity , #activityCity, #popularCity{
+        height: auto;
+    }
+    
+    .popularLinks {
+        height: 150px;
+    }
+
+    /************** Footer ***************/
+    .footerTheme {
+        width: 80%;
     }
 }
