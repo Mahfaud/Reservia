@@ -45,7 +45,9 @@ header {
 
 /* Marge intérieure pour tout le site sauf le footer*/
 main, header {
-    padding: 0px 70px;
+    padding: 0px 30px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 /* Taille du logo du Header */
@@ -88,10 +90,6 @@ main, header {
 /* ---------------------------------------------------------- MAIN ------------------------------------------------------------- */
 
 /* ---------------------------- Barre de recherche ----------------------------- */
-main {
-    max-width: 1900px;
-}
-
 /* Style de la barre de recherche */
 #searchBar {
     margin : 20px 0px;
@@ -255,14 +253,14 @@ main {
 #popularCity {
     padding: 30px;
     width: 450px;
-    height: 800px;
+    height: 600px;
 }
 
 /* Marge et taille de la div des hébergements de la ville*/
 #hostingCity {
     padding: 30px;
-    width: 72.5%;
-    height: 800px;
+    width: 870px;
+    height: 600px;
 }
 
 /* Style de tous les liens des hébergements */
@@ -275,8 +273,8 @@ main {
 
 /* Marge et taille des liens des hébergements*/
 .hostingLinks {
-    height: 300px;
-    width: 380px;
+    height: 220px;
+    width: 250px;
     margin: 10px;
 }
 
@@ -325,9 +323,9 @@ main {
 /* Style des liens des plus populaires*/
 .popularLinks {
     display: flex;
-    margin: 50px auto;
-    height: 170px;
-    width: 350px;
+    margin: 25px auto;
+    height : 140px;
+    width : 350px;
 }
 
 /* Taille des images des plus populaires */
@@ -374,7 +372,7 @@ main {
 /* Style des liens des activités */
 .activityLinks {
     height: 48%;
-    width: 420px;
+    width: 23%;
     border-radius: 25px;
     overflow: hidden;
     position: relative;
@@ -406,7 +404,7 @@ main {
 footer {
     margin-top: 50px;
     background-color: #F2F2F2;
-    max-width: 1900px;
+    width: 100%;
     height: auto;
     display: flex;
 }
@@ -415,7 +413,7 @@ footer {
 .footerTheme {
     width: 25%;
     height: 80%;
-    margin : 30px 60px;
+    margin : 30px auto;
 }
 
 /* Marge au dessus des listes à puces */
@@ -433,102 +431,12 @@ li:hover {
     text-decoration: underline;
 }
 
-/*-----------------------------------------------------------------------*/
 
-/* Version Laptop */
 
-@media screen and (max-width: 1900px) {
-    #hostingCity {
-        width: 1175px;
-    }
-    .hostingLinks {
-        height: 300px;
-        width: 350px;
-    }
-    .activityLinks {
-        width: 400px;
-    }
-}
 
-@media screen and (max-width: 1800px) {
-    #hostingCity {
-        width: 1030px;
-    }
-    .hostingLinks {
-        height: 250px;
-        width: 300px;
-    }
-    .activityLinks {
-        width: 360px;
-    }
-}
+/********************* Version tablette ****************************/
 
-@media screen and (max-width: 1655px) {
-    #hostingCity {
-        width: 880px;
-        height: 700px;
-    }
-    .hostingLinks {
-        height: 250px;
-        width: 250px;
-    }
-    #popularCity {
-        height: 700px;
-    }
-    .popularLinks {
-        margin: 25px auto;
-    }
-    .activityLinks {
-        width: 330px;
-    }
-}
-
-@media screen and (max-width: 1500px) {
-    #hostingCity {
-        width: 800px;
-    }
-    .hostingLinks {
-        height: 225px;
-        width: 225px;
-    }
-    .activityLinks {
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 1420px) {
-    h1 {
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 15px;
-    }
-    .description {
-        font-size: 13px;
-    }
-    #hostingCity {
-        width: 720px;
-        height: 600px;
-    }
-    .hostingLinks {
-        height: 200px;
-        width: 200px;
-    }
-    #popularCity {
-        height: 600px;
-    }
-    .popularLinks {
-        height : 140px;
-        width : 350px;
-    }
-    .activityLinks {
-        width: 280px;
-    }
-}
-
-/* Version tablette */
-
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1380px) {
     h1 {
         font-size: 23px;
     }
@@ -586,6 +494,12 @@ li:hover {
 }
 
 @media screen and (max-width: 1050px) {
+    main {
+        padding : 0px;
+    }
+    header, #mainBox, #activityBox {
+        padding : 0px 35px;
+    }
     #hostingBox {
         height: auto;
     }
@@ -594,6 +508,7 @@ li:hover {
     }
     #popularCity {
         height: auto;
+        border-radius: 0px;
     }
     #popularLinksBox {
         flex-wrap: wrap;
@@ -602,30 +517,21 @@ li:hover {
         height: 200px;
         width: 90%;
     }
-}
-
-@media screen and (max-width: 750px) {
-    main {
-        padding : 0px;
-    }
-    header, #mainBox, #activityBox {
-        padding : 0px 35px;
-    }
-    #popularCity {
-        border-radius: 0px;
-    }
     footer {
         flex-direction: column;
     }
     .footerTheme {
-        width: 50%;
+        width: 80%;
     }
 }
+
 
 /******************************* Version Mobile *************************************/
 
 @media screen and (max-width: 620px) {
-
+    main {
+        padding : 0px;
+    }
     main, header, footer {
         min-width: 330px;
     }
@@ -750,10 +656,5 @@ li:hover {
     
     .popularLinks {
         height: 150px;
-    }
-
-    /************** Footer ***************/
-    .footerTheme {
-        width: 80%;
     }
 }
