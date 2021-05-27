@@ -478,7 +478,7 @@ li:hover {
     }
     .hostingLinks {
         height: 300px;
-        width: 45%;
+        width: 47%;
         margin: 13px;
     }
     #popularLinksBox {
@@ -520,6 +520,9 @@ li:hover {
     }
     #hostingCity {
         background-color: white;
+    }
+    .hostingLinks {
+        width: 45%;
     }
     #popularCity {
         height: auto;
@@ -671,5 +674,6 @@ li:hover {
     
     .popularLinks {
         height: 150px;
+        margin: 15px auto;
     }
 }
